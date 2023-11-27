@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>irakli grigolia</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            top: 0; 
+            left: 0; 
+            width: 99%; 
+            height: 97%;
+            position: absolute; 
+            display: table;
+        }
+        p {
+            display: table-cell; 
+            vertical-align: middle; 
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <font size="7"><i><b>IRAKLI GRIGOLIA</b></i></font> <br><br>
+        <img id="myImage" src="1.jpeg" style="width:560px;"><br><br>
+        <!-- Other content remains the same -->
+        <i>
+            <a href="//24timezones.com/Tbilisi/time" alt="wpi" style="text-decoration: none" class="clock24" id="tz24-1701081341-c1371-eyJob3VydHlwZSI6IjEyIiwic2hvd2RhdGUiOiIxIiwic2hvd3NlY29uZHMiOiIxIiwic2hvd3RpbWV6b25lIjoiMSIsInR5cGUiOiJkIiwibGFuZyI6ImVuIn0=" title="Current time in Tbilisi" target="_blank" rel="nofollow">Current time in Tbilisi</a>
+            <script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
+        </i>
+        <br>
+        <a href="about.html">about</a> //
+        <a href="https://drive.google.com/file/d/1UsThn882cMHaDqOwjHQGxAnCodAhq2zu/view?usp=drive_link">resume</a> //
+        <a href="contact.html">contact</a> // 
+        <a href="https://github.com/swoosh1337">github</a> // 
+        <a href="https://swoosh1337.github.io/">blog</a>  
+    </p>
+    </p>
+    <script>
+        var currentImage = 1;
+        function cycleImages() {
+            currentImage++;
+            if (currentImage > 15) currentImage = 1;
+            document.getElementById('myImage').src = currentImage + '.jpeg';
+        }
+        setInterval(cycleImages, 5000);
+    </script>
+    
+</body>
+</html>

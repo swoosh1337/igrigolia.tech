@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>irakli grigolia</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        img {
+            max-width: 100%;
+            max-height: 400px;
+            display: block;
+        }
+        .text-content {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img id="myImage" src="21.jpeg">
+    
+    <div class="text-content">
+        <p>Irakli Grigolia is a Full Stack Software Engineer known for his expertise in a variety of technologies including Scala, Python, React, and Swift. 
+        His experience spans from developing web applications to creating accessible iOS applications. He is distinguished by his contributions to a range of projects, 
+        including the fields of mobile app development and advanced image processing.
+        Currently furthering his skills at HealthCare.com,
+        Irakli combines technical proficiency with a passion for practical, impactful software solutions.</p>
+    </div>
+    
+    <script>
+        var currentImage = 21;
+        function cycleImages() {
+            currentImage++;
+            if (currentImage > 24) currentImage = 21;
+            document.getElementById('myImage').src = currentImage + '.jpeg';
+        }
+        setInterval(cycleImages, 5000); 
+    </script>
+    
+</body>
+</html>
